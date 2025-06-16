@@ -1,0 +1,188 @@
+:root {
+    --pri-color: #A40F16;
+    --pri02-color: #0D326F;
+    --pri03-color: #C0A353;
+    --white-color: #ffffff;
+    --black-color: #222222;
+    --black-sub-color: #444444;
+    --line-color: #dddddd;
+}
+
+
+
+/* 레이아웃 */
+
+.inner {
+    max-width: 1530px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 100px 0;
+}
+
+.tit {
+    margin: 0 0 40px 0;
+}
+
+.tit p {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--pri-color);
+}
+
+.tit h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.arrow_box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--white-color);
+}
+
+.arrow button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+.arrow_prev>button {
+    transition: 0.5s;
+    background: url(../images/arrow_prev_b.svg)no-repeat center center;
+}
+
+.arrow_prev>button:hover {
+    transition: 0.5s;
+    background: url(../images/arrow_prev_p.svg)no-repeat center center;
+}
+
+.arrow_next>button {
+    transition: 0.5s;
+    background: url(../images/arrow_next_b.svg)no-repeat center center;
+}
+
+.arrow_next>button:hover {
+    transition: 0.5s;
+    background: url(../images/arrow_next_p.svg)no-repeat center center;
+}
+
+/* 일반 버튼 */
+
+.more_btn {
+    width: 92px;
+    height: 20px;
+}
+
+.more_btn a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--pri-color);
+}
+
+/* 볼더 라인 화이트 버튼 */
+
+.more_line_w_btn {
+    z-index: 9;
+    position: relative;
+    width: 160px;
+    height: 48px;
+
+    margin: 0 auto;
+}
+
+.more_line_w_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: var(--white-color);
+    transition: 0.3s;
+}
+
+.more_line_w_btn:hover::before {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+.more_line_w_btn a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 46px;
+    color: var(--white-color);
+    border: 1px solid #999;
+}
+
+.more_line_w_btn:hover a {
+    z-index: 10;
+    position: relative;
+    color: var(--black-color);
+    transition: 0.3s;
+}
+
+/* 볼더 라인 주컬러 버튼 */
+
+.more_line_b_btn {
+    position: relative;
+    width: 160px;
+    height: 48px;
+
+    margin: 0 auto;
+}
+
+.more_line_b_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: var(--pri-color);
+    transition: 0.3s;
+}
+
+.more_line_b_btn:hover::before {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+.more_line_b_btn a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 46px;
+    color: var(--black-sub-color);
+    border: 1px solid var(--line-color);
+}
+
+.more_line_b_btn:hover a {
+    color: var(--white-color);
+    transition: 0.3s;
+}
