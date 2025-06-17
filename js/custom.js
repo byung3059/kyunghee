@@ -14,10 +14,10 @@ $(function () {
         loop: true,
         speed: 1000,
         effect: 'fade',
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
         fadeEffect: {
             crossFade: true,
         },
@@ -73,21 +73,24 @@ $(function () {
 
     })
 
+    const main_research = new Swiper('.main_research_slide_box', {
 
+        loop: true,
+        speed: 500,
+        spaceBetween: 30,
+        slidesPerView: 'auto',
+        slidesPerGroup: 1,
 
-    Splitting();
+        navigation: {
+            nextEl: ".main_research_nav .arrow_next",
+            prevEl: ".main_research_nav .arrow_prev",
+        },
 
-    // IntersectionObserver로 보이면 .animate 클래스 추가
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-            }
-        });
-    }, {
-        threshold: 0.3 // 30% 이상 보이면 실행
     });
 
-    document.querySelectorAll('.animate-text').forEach(el => observer.observe(el));
+    $('#footer .link .f_link').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggle();
+    });
 
 });
