@@ -273,6 +273,12 @@
     filter: invert(1);
 }
 
+@media(max-width: 1500px) {
+    #header_bottom .sub_box .sub_tit {
+        min-width: 360px;
+    }
+}
+
 /* PC 메뉴 hover 관련 */
 @media(min-width: 1400px) {
 
