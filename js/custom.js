@@ -2,7 +2,7 @@ $(function () {
 
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
-        console.log(sct);
+        // console.log(sct);
         if (sct > 1) {
             $('#header').addClass('on')
         } else {
@@ -71,22 +71,24 @@ $(function () {
 
         $(this).parent().addClass('on').siblings().removeClass('on')
 
-    })
+    });
 
-    const main_research = new Swiper('.main_research_slide_box', {
+    const main_media = new Swiper('.main_media_slide_box', {
 
         loop: true,
+        loopedSlides: 2,
         speed: 500,
         spaceBetween: 30,
         slidesPerView: 'auto',
         slidesPerGroup: 1,
 
         navigation: {
-            nextEl: ".main_research_nav .arrow_next",
-            prevEl: ".main_research_nav .arrow_prev",
+            nextEl: ".main_media_nav .arrow_next",
+            prevEl: ".main_media_nav .arrow_prev",
         },
 
     });
+
 
     $('#footer .link .f_link').on('click', function () {
         $(this).toggleClass('on');
