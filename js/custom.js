@@ -44,17 +44,19 @@ $(function () {
         },
     });
 
-    const main_focus = new Swiper('.main_focus_slide_box', {
+
+    const main_media = new Swiper('.main_media_slide_box', {
 
         loop: true,
+        loopedSlides: 2,
         speed: 500,
         spaceBetween: 30,
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         slidesPerGroup: 1,
 
         navigation: {
-            nextEl: ".main_focus_nav .arrow_next",
-            prevEl: ".main_focus_nav .arrow_prev",
+            nextEl: ".main_media_nav .arrow_next",
+            prevEl: ".main_media_nav .arrow_prev",
         },
 
     });
@@ -73,26 +75,73 @@ $(function () {
 
     });
 
-    const main_media = new Swiper('.main_media_slide_box', {
+    const main_focus = new Swiper('.main_focus_slide_box', {
 
         loop: true,
-        loopedSlides: 2,
         speed: 500,
         spaceBetween: 30,
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         slidesPerGroup: 1,
 
         navigation: {
-            nextEl: ".main_media_nav .arrow_next",
-            prevEl: ".main_media_nav .arrow_prev",
+            nextEl: ".main_focus_nav .arrow_next",
+            prevEl: ".main_focus_nav .arrow_prev",
+        },
+
+        breakpoints: {
+            1400: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
         },
 
     });
 
+    var $target = $('.main_count');
+    var counted = false;
 
-    $('#footer .link .f_link').on('click', function () {
-        $(this).toggleClass('on');
-        $(this).next().toggle();
+    $(window).on('scroll', function () {
+        var winTop = $(window).scrollTop();
+        var offsetTop = $target.offset().top - $(window).height() + 100;
+
+        if (winTop > offsetTop && !counted) {
+            $target.addClass('on');
+
+            $('.count').each(function () {
+                var $this = $(this);
+                var rawText = $this.text().replace(/,/g, ''); // 쉼표 제거
+                var isFloat = rawText.includes(".");
+                var countTo = parseFloat(rawText);
+
+                $this.prop('Counter', 0).animate({
+                    Counter: countTo
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function (now) {
+                        if (isFloat) {
+                            $this.text(now.toFixed(1)); // 소수 한 자리
+                        } else {
+                            $this.text(Math.floor(now).toLocaleString()); // 쉼표 포함 정수
+                        }
+                    }
+                });
+            });
+
+            counted = true;
+        }
     });
+    $('#footer .link_box').on('click', function () {
+        var $this = $(this);
+
+        if ($this.hasClass('on')) {
+            // 이미 on 상태라면 꺼줌
+            $this.removeClass('on');
+        } else {
+            // 켜고, 다른 형제들은 꺼줌
+            $this.addClass('on').siblings().removeClass('on');
+        }
+    });
+
 
 });

@@ -21,6 +21,13 @@
     padding: 100px 0;
 }
 
+section .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 260px;
+    justify-content: space-between;
+}
+
 .tit {
     margin: 0 0 40px 0;
 }
@@ -31,6 +38,7 @@
     line-height: 24px;
     font-weight: 700;
     color: var(--pri-color);
+    font-family: "Poppins";
 }
 
 .tit h2 {
@@ -40,48 +48,72 @@
     color: var(--black-color);
 }
 
+.tit span {
+    display: block;
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #444;
+    word-break: keep-all;
+}
+
 .arrow_box {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 32px;
 }
 
-.arrow {
+.arrow_box .arrow {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: var(--white-color);
 }
 
-.arrow button {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-indent: -9999px;
+.arrow_box .arrow_prev::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 14px;
+    background: var(--line-color);
 }
 
-.arrow_prev>button {
-    transition: 0.5s;
-    background: url(../images/arrow_prev_b.svg)no-repeat center center;
+.arrow_box .arrow>button {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+    color: var(--line-color);
+    font-family: "Poppins";
 }
 
-.arrow_prev>button:hover {
-    transition: 0.5s;
-    background: url(../images/arrow_prev_p.svg)no-repeat center center;
+.arrow_box .arrow_prev button {
+    padding: 0 0 0 21px;
+    transition: 0.3s;
+    background: url(../images/arrow_prev_b.svg)no-repeat center left/8px;
 }
 
-.arrow_next>button {
-    transition: 0.5s;
-    background: url(../images/arrow_next_b.svg)no-repeat center center;
+.arrow_box .arrow_next button {
+    padding: 0 21px 0 0;
+    transition: 0.3s;
+    background: url(../images/arrow_next_b.svg)no-repeat center right/8px;
 }
 
-.arrow_next>button:hover {
-    transition: 0.5s;
-    background: url(../images/arrow_next_p.svg)no-repeat center center;
+.arrow>button:hover {
+    color: var(--pri-color);
+}
+
+.arrow_box .arrow_prev button:hover {
+    transition: 0.3s;
+    background: url(../images/arrow_prev_p.svg)no-repeat center left/8px;
+}
+
+.arrow_box .arrow_next button:hover {
+    transition: 0.3s;
+    background: url(../images/arrow_next_p.svg)no-repeat center right/8px;
 }
 
 /* 일반 버튼 */
@@ -95,20 +127,33 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    color: var(--pri-color);
+    color: var(--line-color);
     font-family: "Poppins";
-    border-bottom: 1px solid var(--pri-color);
+    border-bottom: 1px solid var(--line-color);
+}
+
+/* 볼더 라인 버튼 공통 */
+.line_btn {
+    z-index: 9;
+    position: relative;
+    width: 210px;
+    height: 56px;
+}
+
+.line_btn a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 56px;
+    font-weight: 700;
+    font-family: "Poppins";
 }
 
 /* 볼더 라인 화이트 버튼 */
 
 .more_line_w_btn {
-    z-index: 9;
-    position: relative;
-    width: 210px;
-    height: 56px;
-
     margin: 0 auto;
+    border: 1px solid #999;
 }
 
 .more_line_w_btn::before {
@@ -120,6 +165,7 @@
     width: 0;
     height: 100%;
     background: var(--white-color);
+
     transition: 0.3s;
 }
 
@@ -130,14 +176,7 @@
 }
 
 .more_line_w_btn a {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 54px;
-    font-family: "Poppins";
     color: var(--white-color);
-    border: 1px solid #999;
 }
 
 .more_line_w_btn:hover a {
@@ -147,67 +186,70 @@
     transition: 0.3s;
 }
 
-/* 볼더 라인 주컬러 버튼 */
-
-.more_line_b_btn {
-    position: relative;
-    width: 210px;
-    height: 56px;
-
-    margin: 0 auto;
-}
-
-.more_line_b_btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 0;
-    height: 100%;
-    background: var(--pri-color);
-    transition: 0.3s;
-}
-
-.more_line_b_btn:hover::before {
-    right: auto;
-    left: 0;
-    width: 100%;
-}
-
-.more_line_b_btn a {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 54px;
-    font-family: "Poppins";
-    color: var(--black-sub-color);
-    border: 1px solid var(--line-color);
-}
-
-.more_line_b_btn:hover a {
-    color: var(--white-color);
-    transition: 0.3s;
-}
-
 /* 볼더 배경 주컬러 버튼 */
 
-.more_p_btn {
-    position: relative;
-    width: 210px;
-    height: 56px;
-
-    margin: 0 auto;
-}
-
 .more_p_btn a {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 54px;
-    font-family: "Poppins";
     color: var(--white-color);
     background: var(--pri-color);
+}
+
+@media(max-width: 1690px) {
+    .inner {
+        padding: 0 40px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .tit h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+
+    .tit p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .tit span {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    section .left {
+        flex: 1 0 210px;
+    }
+}
+
+@media(max-width: 1200px) {
+    section .left {
+        flex: 1 0 180px;
+    }
+
+    .line_btn {
+        z-index: 9;
+        position: relative;
+        width: 160px;
+        height: 40px;
+    }
+
+    .line_btn a {
+        display: block;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .arrow_box {
+        gap: 16px;
+    }
+
+    .arrow_box .arrow>button {
+        font-size: 18px;
+    }
+
+    .arrow_box .arrow_prev::before {
+        right: -10px;
+        height: 10px;
+    }
 }
