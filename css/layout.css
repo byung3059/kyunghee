@@ -12,11 +12,7 @@
 
 /* 레이아웃 */
 
-#header,
-#wrap,
-#footer {
-    overflow: hidden;
-}
+
 
 .inner {
     max-width: 1530px;

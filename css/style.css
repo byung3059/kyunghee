@@ -256,6 +256,10 @@
     background: url(../images/util_menu.svg)no-repeat center center/cover;
 }
 
+#header_bottom .util>ul>.m_menu_btn{
+    display: none;
+}
+
 #header_bottom .m_gnb_top_box .m_menu_btn {
     background: url(../images/menu_x_btn.svg)no-repeat center center/cover;
 }
@@ -267,6 +271,7 @@
     text-indent: -9999px;
 }
 
+
 /* 헤더 on */
 
 #header.on {
@@ -275,6 +280,10 @@
     border-bottom: 1px solid var(--line-color);
 
     transition: 0.3s;
+}
+
+#header.on #header_bottom .inner{
+    height: 80px;
 }
 
 #header.on #header_bottom .logo>h1>a {
@@ -317,7 +326,7 @@
         color: var(--black-color);
     }
 
-    #header:hover #header_bottom .util>ul>li>a {
+    #header:hover #header_bottom .util>ul>li {
         filter: invert(1);
     }
 
@@ -411,6 +420,10 @@
 
     .sitemap {
         display: none;
+    }
+
+#header_bottom .util>ul>.m_menu_btn {
+        display: block;
     }
 
     #header_bottom>.inner {
