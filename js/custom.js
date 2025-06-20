@@ -109,7 +109,7 @@ $(function () {
 
             $('.count').each(function () {
                 var $this = $(this);
-                var rawText = $this.text().replace(/,/g, ''); // 쉼표 제거
+                var rawText = $this.text().replace(/,/g, '');
                 var isFloat = rawText.includes(".");
                 var countTo = parseFloat(rawText);
 
@@ -120,9 +120,9 @@ $(function () {
                     easing: 'swing',
                     step: function (now) {
                         if (isFloat) {
-                            $this.text(now.toFixed(1)); // 소수 한 자리
+                            $this.text(now.toFixed(1));
                         } else {
-                            $this.text(Math.floor(now).toLocaleString()); // 쉼표 포함 정수
+                            $this.text(Math.floor(now).toLocaleString());
                         }
                     }
                 });
@@ -135,12 +135,37 @@ $(function () {
         var $this = $(this);
 
         if ($this.hasClass('on')) {
-            // 이미 on 상태라면 꺼줌
             $this.removeClass('on');
         } else {
-            // 켜고, 다른 형제들은 꺼줌
             $this.addClass('on').siblings().removeClass('on');
         }
+    });
+
+    // 반응형 메뉴//
+    $('#header_bottom .util .m_menu_btn').on('click', function () {
+        $('#header_bottom .gnb').addClass('on');
+    })
+    $('#header_bottom .m_gnb_top_box .m_menu_btn').on('click', function () {
+        $('#header_bottom .gnb').removeClass('on');
+    })
+
+    $('#header_bottom .gnb>ul>li>a').on('click', function (e) {
+
+        if ($('#header_bottom .gnb').hasClass('on')) {
+            e.preventDefault();
+            $('#header_bottom .sub_box').addClass('on');
+            $(this).parent().siblings().find('.sub_box').removeClass('on');
+        };
+
+    });
+
+    $('#header_bottom .sub>li>a').on('click', function (e) {
+        $(this).parent().siblings().find('.sub_list').stop().slideUp(0);
+        if ($(this).next().hasClass('sub_list') && $('#header .inner .gnb').hasClass('on')) {
+            e.preventDefault();
+            $(this).next().stop().slideToggle(0);
+        }
+
     });
 
 
