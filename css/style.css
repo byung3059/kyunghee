@@ -1433,6 +1433,11 @@
     height: 100%;
 }
 
+.main_focus .main_focus_slide_box .itm .img_box img{
+    height: 100%;
+    object-fit: cover;
+}
+
 .main_focus .main_focus_slide_box .itm .img_box::before {
     content: '';
     position: absolute;

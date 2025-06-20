@@ -291,6 +291,7 @@ section .left {
 
     section .left {
         flex: none;
+        justify-content: center;
     }
 }
 
