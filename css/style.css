@@ -1062,7 +1062,7 @@
     }
 
     .main_media .main_media_slide_box .itm {
-        max-width: 240px;
+        max-width: unset;
     }
 
     .main_media .main_media_slide_box .itm .main_media_tit .txt_box .date {

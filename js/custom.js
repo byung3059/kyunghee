@@ -51,12 +51,19 @@ $(function () {
         loopedSlides: 2,
         speed: 500,
         spaceBetween: 30,
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         slidesPerGroup: 1,
 
         navigation: {
             nextEl: ".main_media_nav .arrow_next",
             prevEl: ".main_media_nav .arrow_prev",
+        }, 
+        
+        breakpoints: {
+            768: {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+            },
         },
 
     });
