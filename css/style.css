@@ -593,11 +593,11 @@
     }
 
     #header_bottom .gnb>ul {
-        width: 200px;
+        width: 180px;
     }
 
     #header_bottom .sub_box.on {
-        width: calc(100% - 200px);
+        width: calc(100% - 180px);
     }
 
     #header_bottom .gnb>ul>li>a {
