@@ -1532,17 +1532,26 @@
 
 @media(max-width: 768px) {
     .main_focus {
-        display: none;
+        padding: 60px 0 100px 0;
     }
 
     .main_focus .inner {
+        display: block;
         flex-direction: column;
     }
 
-    .main_focus .inner .bottom {
+    .main_focus .left .bottom{      
+        position: absolute;
+        bottom: -64px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .main_focus .inner .main_focus_nav {
         display: none;
     }
 
+  
     .main_focus_slide_box {
         overflow: hidden;
     }
