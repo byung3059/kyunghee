@@ -1556,6 +1556,10 @@
         overflow: hidden;
     }
 
+    .main_focus .main_focus_slide_box .itm .img_box img{
+        height: unset;
+    }
+
 }
 
 /* 메인 명예의 전당 */
