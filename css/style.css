@@ -1512,6 +1512,25 @@
     }
 }
 
+@media(max-width: 768px) {
+    .main_focus {
+        display: none;
+    }
+
+    .main_focus .inner {
+        flex-direction: column;
+    }
+
+    .main_focus .inner .bottom {
+        display: none;
+    }
+
+    .main_focus_slide_box {
+        overflow: hidden;
+    }
+
+}
+
 /* 메인 명예의 전당 */
 .main_honor {
     background: url(../images/main_honor_bg.jpg)no-repeat center center/cover;
@@ -1531,7 +1550,12 @@
     color: var(--white-color);
 }
 
-
+@media(max-width: 768px) {
+    .main_honor .tit p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
 
 /* 메인 SNS */
 .main_sns {}
@@ -1657,6 +1681,25 @@
     }
 }
 
+@media(max-width: 768px) {
+    .main_sns .link_box {
+        display: none;
+    }
+
+    .main_sns .right .main_sns_itm_list {
+        flex-direction: column;
+    }
+
+    .main_sns .right .main_sns_itm_list .itm .txt_box {
+        padding: 16px 0;
+    }
+
+    .main_sns .right .main_sns_itm_list .itm .txt_box strong {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
 /* 메인 카운트 */
 
 .main_count {
@@ -1753,6 +1796,25 @@
     .main_count .count_box>ul>li~li::before {
         height: 48px;
         opacity: 0.1;
+    }
+}
+
+@media(max-width: 768px) {
+    .main_count .count_box>ul>li .txt_box {
+        font-size: 12px;
+    }
+
+    .main_count .count_box>ul>li {
+        gap: 16px;
+    }
+
+    .main_count .count_box>ul>li .count {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .main_count .count_box>ul>li~li::before {
+        content: none;
     }
 }
 
@@ -1912,5 +1974,51 @@
         align-items: baseline;
         flex-direction: column;
         gap: 24px;
+    }
+}
+
+@media(max-width: 768px) {
+    #footer .inner .ft {
+        padding: 20px 0;
+    }
+
+    #footer .inner .ft_top>ul .b>a {
+        font-size: 14px;
+    }
+
+    #footer .inner .ft_top>ul {
+        flex-direction: column;
+        gap: 16px;
+        align-items: baseline;
+    }
+
+    #footer .inner .ft_top>ul>li~li::before {
+        content: none;
+    }
+
+    #footer .inner .ft_bottom .right>ul {
+        margin: 0 0 16px 0;
+    }
+
+    #footer .inner .ft_bottom .right>ul>li>a {
+        font-size: 12px;
+    }
+
+    #footer .inner .ft_bottom address {
+        font-size: 12px;
+    }
+
+    #footer .link {
+        width: 100%;
+    }
+
+    #footer .link>* {
+        flex: 1;
+    }
+
+    #footer .link .f_link {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
     }
 }
