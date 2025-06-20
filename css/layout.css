@@ -304,4 +304,11 @@ section .left {
     .tit span br {
         display: none;
     }
+
+    .more_btn{
+        width: 90px;
+    }
+    .more_btn p{
+        font-size: 14px;
+    }
 }
