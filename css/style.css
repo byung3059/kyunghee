@@ -929,7 +929,7 @@
     }
 
     .main_visual .itm {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 80px);
     }
 
     .main_visual .itm01 {
