@@ -15,7 +15,7 @@ $(function () {
         speed: 1000,
         effect: 'fade',
         autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         fadeEffect: {
