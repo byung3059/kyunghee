@@ -588,6 +588,10 @@
         height: 60px;
     }
 
+    #header.on #header_bottom .inner {
+        height: 60px;
+    }
+
     #header_bottom .logo>h1>a {
         width: 140px;
         height: 34px;
@@ -678,8 +682,8 @@
 .main_visual .itm .slg strong {
     display: block;
     margin: 0 0 24px 0;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 48px;
+    line-height: 56px;
     font-weight: 700;
     color: var(--white-color);
     text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
@@ -1770,7 +1774,9 @@
         display: none;
     }
 
-
+    .main_sns .right .main_sns_itm_list {
+        gap: 16px;
+    }
 
     .main_sns .right .main_sns_itm_list .itm .txt_box {
         padding: 16px 0;
