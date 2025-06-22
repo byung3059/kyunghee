@@ -57,10 +57,10 @@ $(function () {
         navigation: {
             nextEl: ".main_media_nav .arrow_next",
             prevEl: ".main_media_nav .arrow_prev",
-        }, 
-        
+        },
+
         breakpoints: {
-            768: {
+            480: {
                 slidesPerView: 'auto',
                 spaceBetween: 30,
             },
@@ -96,7 +96,7 @@ $(function () {
         },
 
         breakpoints: {
-            1400: {
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 30,
             },
