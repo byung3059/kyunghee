@@ -487,18 +487,13 @@
         color: var(--white-color);
     }
 
-
     #header_bottom .gnb>ul {
         flex-direction: column;
         width: 200px;
     }
 
-    #header_bottom .gnb>ul>li {
-        padding: 0 0 0 16px;
-    }
-
     #header_bottom .gnb>ul>li>a {
-        padding: 0;
+        padding: 0 0 0 16px;
         font-size: 18px;
         line-height: 56px;
         color: var(--black-sub-color);
@@ -625,6 +620,7 @@
 @media(max-width: 480px) {
     #header_bottom .m_gnb_top_box .bottom>li>a {
         line-height: 40px;
+        font-size: 12px;
     }
 
     #header_bottom .gnb {
@@ -638,6 +634,11 @@
     #header_bottom .gnb>ul>li>a {
         font-size: 16px;
         line-height: 48px;
+    }
+
+    #header.on #header_bottom .gnb>ul>li>a {
+        line-height: 48px;
+        color: var(--black-sub-color);
     }
 
     #header_bottom .sub_box {
@@ -812,7 +813,7 @@
 /* 메인 비주얼 스크롤 */
 .main_visual .scroll {
     position: absolute;
-    bottom: 4rem;
+    bottom: 64px;
     left: 50%;
     transform: translate(-50%, 50px);
     text-align: center;
@@ -2176,7 +2177,7 @@
 
 #footer .link ul {
     display: none;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     height: 200px;
     overflow-y: auto;
     margin-top: -1px;
@@ -2184,24 +2185,23 @@
     position: absolute;
     bottom: 48px;
     width: 100%;
+    background: #444;
 }
 
 #footer .link_box.on ul {
     display: block;
 }
 
-#footer .link_box.on ul>li>a {
+#footer .link_box ul>li>a {
     display: block;
-    padding: 0 24px;
+    padding: 0 16px;
     font-size: 14px;
-    line-height: 40px;
+    line-height: 39px;
     color: #ccc;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#footer .link .f_link+ul li {
-    background: #444;
-}
+#footer .link .f_link+ul li {}
 
 @media(max-width: 1024px) {
     #footer .inner .ft_bottom {
@@ -2254,5 +2254,24 @@
         width: 100%;
         font-size: 14px;
         height: 40px;
+    }
+
+    #footer .link ul {
+        bottom: 40px;
+    }
+}
+
+@media(max-width: 480px) {
+    #footer .link .f_link {
+        padding: 0 8px;
+    }
+
+    #footer .link_box ul>li>a {
+        padding: 0 8px;
+    }
+
+    #footer .inner .ft_bottom address {
+        font-size: 11px;
+        line-height: 11px;
     }
 }
