@@ -60,6 +60,14 @@ section .left {
     word-break: keep-all;
 }
 
+.br_pc {
+    display: block;
+}
+
+.br_m {
+    display: none;
+}
+
 .arrow_box {
     display: flex;
     align-items: center;
@@ -116,6 +124,18 @@ section .left {
 .arrow_box .arrow_next button:hover {
     transition: 0.3s;
     background: url(../images/arrow_next_p.svg)no-repeat center right/8px;
+}
+
+/* 슬라이드 페이징네이션 */
+
+#wrap .default .nav_line_default {
+    display: none;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#wrap .default .nav_line_default .swiper-pagination-progressbar-fill {
+    background: var(--pri-color);
 }
 
 /* 일반 버튼 */
@@ -286,29 +306,49 @@ section .left {
     }
 
     .tit span {
-        text-align: center;
-    }
-
-    section .left {
-        flex: none;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 480px) {
-    .tit span {
-        max-width: 320px;
         margin: 16px auto 0 auto;
+        max-width: 220px;
+        text-align: center;
     }
 
     .tit span br {
         display: none;
     }
 
-    .more_btn{
+    section .left {
+        flex: none;
+        justify-content: center;
+    }
+
+    #wrap .default .nav_line_default {
+        display: block;
+        position: static;
+        margin: 24px 0 0 0;
+    }
+
+    .more_btn {
         width: 90px;
     }
-    .more_btn p{
+
+    .more_btn p {
         font-size: 14px;
     }
+
+    .br_pc {
+        display: none;
+    }
+
+    .br_m {
+        display: block;
+    }
+}
+
+@media(max-width: 480px) {
+    #wrap .default .nav_line_default {
+        display: block;
+        position: static;
+        margin: 16px 0 0 0;
+    }
+
+
 }

@@ -14,10 +14,10 @@ $(function () {
         loop: true,
         speed: 1000,
         effect: 'fade',
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         fadeEffect: {
             crossFade: true,
         },
@@ -50,7 +50,7 @@ $(function () {
         loop: true,
         loopedSlides: 2,
         speed: 500,
-        spaceBetween: 30,
+        spaceBetween: 16,
         slidesPerView: 1,
         slidesPerGroup: 1,
 
@@ -59,8 +59,17 @@ $(function () {
             prevEl: ".main_media_nav .arrow_prev",
         },
 
+        pagination: {
+            el: ".main_media .nav_line_default",
+            type: "progressbar",
+        },
+
         breakpoints: {
             480: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            769: {
                 slidesPerView: 'auto',
                 spaceBetween: 30,
             },
@@ -86,22 +95,51 @@ $(function () {
 
         loop: true,
         speed: 500,
-        spaceBetween: 30,
+        spaceBetween: 16,
         slidesPerView: 1,
         slidesPerGroup: 1,
-
         navigation: {
             nextEl: ".main_focus_nav .arrow_next",
             prevEl: ".main_focus_nav .arrow_prev",
         },
 
-        breakpoints: {
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
+        pagination: {
+            el: ".main_focus .nav_line_default",
+            type: "progressbar",
         },
 
+        breakpoints: {
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+
+        },
+
+    });
+
+    const main_sns = new Swiper('.main_sns_slide_box', {
+        speed: 500,
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        pagination: {
+            el: ".main_sns .nav_line_default",
+            type: "progressbar",
+        },
+
+        breakpoints: {
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+
+        },
     });
 
     var $target = $('.main_count');

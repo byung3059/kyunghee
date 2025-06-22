@@ -10,391 +10,395 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/splitting/dist/splitting.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+
     <script src="./js/custom.js" defer></script>
 </head>
 
 <body>
-    <!-- 헤더 -->
-    <header id="header">
-        <div id="header_top">
-            <div class="inner">
-                <ul>
-                    <li><a href="">발전기금</a></li>
-                    <li><a href="">웹메일</a></li>
-                    <li><a href="">인포21</a></li>
-                    <li><a href="">채용시스템</a></li>
-                    <li><a href="">로그인</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="header_bottom">
-            <div class="inner">
-                <div class="logo">
-                    <h1><a href="">경희대학교</a></h1>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header">
+            <div id="header_top">
+                <div class="inner">
+                    <ul>
+                        <li><a href="">발전기금</a></li>
+                        <li><a href="">웹메일</a></li>
+                        <li><a href="">인포21</a></li>
+                        <li><a href="">채용시스템</a></li>
+                        <li><a href="">로그인</a></li>
+                    </ul>
                 </div>
-                <nav class="gnb">
-                    <div class="m_gnb_top_box">
-                        <ul class="top">
-                            <li class="m_logo">경희대학교</li>
+            </div>
+            <div id="header_bottom">
+                <div class="inner">
+                    <div class="logo">
+                        <h1><a href="">경희대학교</a></h1>
+                    </div>
+                    <nav class="gnb">
+                        <div class="m_gnb_top_box">
+                            <ul class="top">
+                                <li class="m_logo">경희대학교</li>
+                                <li class="m_menu_btn"><button>모바일 메뉴 버튼</button></li>
+                            </ul>
+                            <ul class="bottom">
+                                <li><a href="">웹메일</a></li>
+                                <li><a href="">인포21</a></li>
+                                <li><a href="">채용시스템</a></li>
+                                <li><a href="">발전기금</a></li>
+                                <li class="login"><a href="">로그인</a></li>
+                            </ul>
+                        </div>
+
+                        <ul>
+                            <li><a href="">대학소개</a>
+                                <div class="sub_box on">
+                                    <div class="sub_tit">
+                                        <div class="txt_box">
+                                            <strong>대학소개</strong>
+                                            <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
+                                        </div>
+                                    </div>
+                                    <ul class="sub">
+                                        <li><a href="">경희정신</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">상징</a></li>
+                                                <li><a href="">UI</a></li>
+                                                <li><a href="">연혁</a></li>
+                                                <li><a href="">창학정신</a></li>
+                                                <li><a href="">미래전략</a></li>
+                                                <li><a href="">학교법인 경희학원</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">총장실</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">인사말</a></li>
+                                                <li><a href="">약력</a></li>
+                                                <li><a href="">연설</a></li>
+                                                <li><a href="">서신</a></li>
+                                                <li><a href="">동정</a></li>
+                                                <li><a href="">역대총장</a></li>
+                                                <li><a href="">뉴스클리핑</a></li>
+                                                <li><a href="">영상 메시지</a></li>
+                                                <li><a href="">열린 총장실</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">대학행정</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">기구표</a></li>
+                                                <li><a href="">위원회</a></li>
+                                                <li><a href="">부총장실</a></li>
+                                                <li><a href="">교무위원</a></li>
+                                                <li><a href="">대학본부</a></li>
+                                                <li><a href="">부속병원</a></li>
+                                                <li><a href="">부속기관/연구소/기타기관</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">대학현황</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">대학현황</a></li>
+                                                <li><a href="">대학정보공시</a></li>
+                                                <li><a href="">대학정보공개</a></li>
+                                                <li><a href="">예결산공고</a></li>
+                                                <li><a href="">업무추진비</a></li>
+                                                <li><a href="">규정·요람</a></li>
+                                                <li><a href="">기부 및 모금</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">캠퍼스안내</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">서울캠퍼스</a></li>
+                                                <li><a href="">국제캠퍼스</a></li>
+                                                <li><a href="">광릉캠퍼스</a></li>
+                                                <li><a href="">Space 21</a></li>
+                                                <li><a href="">교내 전화번호</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">입학안내</a>
+                                <div class="sub_box">
+                                    <div class="sub_tit">
+                                        <div class="txt_box">
+                                            <strong>입학안내</strong>
+                                            <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
+                                        </div>
+                                    </div>
+                                    <ul class="sub">
+                                        <li><a href="">대학 입학·편입학</a></li>
+                                        <li><a href="">대학원 입학</a></li>
+                                        <li><a href="">외국인 입학</a></li>
+                                        <li><a href="">교육기관</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">교육기관</a></li>
+                                                <li><a href="">평생교육</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">대학·대학원</a>
+                                <div class="sub_box">
+                                    <div class="sub_tit">
+                                        <div class="txt_box">
+                                            <strong>대학·대학원</strong>
+                                            <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
+                                        </div>
+                                    </div>
+                                    <ul class="sub sub_wrap">
+                                        <li><a href="">대학</a>
+                                            <ul class="sub_list sub_list_wrap">
+                                                <li><a href="">학사</a></li>
+                                                <li><a href="">후마니타스칼리지</a></li>
+                                                <li><a href="">문과대학</a></li>
+                                                <li><a href="">법과대학</a></li>
+                                                <li><a href="">정경대학</a></li>
+                                                <li><a href="">경영대학</a></li>
+                                                <li><a href="">호텔관광대학</a></li>
+                                                <li><a href="">이과대학</a></li>
+                                                <li><a href="">생활과학대학</a></li>
+                                                <li><a href="">의과대학</a></li>
+                                                <li><a href="">한의과대학</a></li>
+                                                <li><a href="">치과대학</a></li>
+                                                <li><a href="">약학대학</a></li>
+                                                <li><a href="">간호과학대학</a></li>
+                                                <li><a href="">음악대학</a></li>
+                                                <li><a href="">미술대학</a></li>
+                                                <li><a href="">무용학부</a></li>
+                                                <li><a href="">자율전공학부</a></li>
+                                                <li><a href="">공과대학</a></li>
+                                                <li><a href="">전자정보대학</a></li>
+                                                <li><a href="">소프트웨어융합대학</a></li>
+                                                <li><a href="">응용과학대학</a></li>
+                                                <li><a href="">생명과학대학</a></li>
+                                                <li><a href="">국제대학</a></li>
+                                                <li><a href="">외국어대학</a></li>
+                                                <li><a href="">예술·디자인대학</a></li>
+                                                <li><a href="">체육대학</a></li>
+                                                <li><a href="">자유전공학부</a></li>
+                                                <li><a href="">동서의과학과</a></li>
+                                                <li><a href="">융합전공</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">대학원</a>
+
+                                            <ul class="sub_list sub_list_wrap">
+                                                <li><a href="">일반대학원</a></li>
+                                                <li><a href="">경영대학원</a></li>
+                                                <li><a href="">관광대학원</a></li>
+                                                <li><a href="">국제대학원</a></li>
+                                                <li><a href="">간호대학원</a></li>
+                                                <li><a href="">공공대학원</a></li>
+                                                <li><a href="">교육대학원</a></li>
+                                                <li><a href="">법무대학원</a></li>
+                                                <li><a href="">체육대학원</a></li>
+                                                <li><a href="">법학전문대학원</a></li>
+                                                <li><a href="">의학전문대학원</a></li>
+                                                <li><a href="">평화복지대학원</a></li>
+                                                <li><a href="">동서의학대학원</a></li>
+                                                <li><a href="">치의학전문대학원</a></li>
+                                                <li><a href="">테크노경영대학원</a></li>
+                                                <li><a href="">아트퓨전디자인대학원</a></li>
+                                                <li><a href="">미디어커뮤니케이션대학원</a></li>
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">연구·산학</a>
+                                <div class="sub_box">
+                                    <div class="sub_tit">
+                                        <div class="txt_box">
+                                            <strong>연구·산학</strong>
+                                            <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
+                                        </div>
+                                    </div>
+                                    <ul class="sub">
+                                        <li><a href="">연구기관</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">위원회</a></li>
+                                                <li><a href="">연구지원</a></li>
+                                                <li><a href="">부설연구소</a></li>
+                                                <li><a href="">국가지원연구센터</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">대형연구</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">HK 사업</a></li>
+                                                <li><a href="">WCU 사업</a></li>
+                                                <li><a href="">TLO 사업</a></li>
+                                                <li><a href="">BK21 플러스 사업</a></li>
+                                                <li><a href="">BK21 사업</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">학술진흥 2020</a></li>
+                                        <li><a href="">명예의 전당</a></li>
+                                        <li><a href="">연구포털</a></li>
+                                        <li><a href="">연구자 연구정보(PURE)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">교류·실천</a>
+                                <div class="sub_box">
+                                    <div class="sub_tit">
+                                        <div class="txt_box">
+                                            <strong>교류·실천</strong>
+                                            <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
+                                        </div>
+                                    </div>
+                                    <ul class="sub">
+                                        <li><a href="">경희와 인류평화</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">UN평화공원</a></li>
+                                                <li><a href="">World Civic Forum</a></li>
+                                                <li><a href="">UNAI-경희 국제회의</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">사회공헌</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">봉사단체</a></li>
+                                                <li><a href="">글로벌봉사팀</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">국제 교류</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">해외 자매대학</a></li>
+                                                <li><a href="">국제 교류 프로그램</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">특별강연</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">미원렉처</a></li>
+                                                <li><a href="">석학초청특강</a></li>
+                                                <li><a href="">21세기 미래대학을 말한다</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">행사</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">졸업식</a></li>
+                                                <li><a href="">입학식</a></li>
+                                                <li><a href="">목련회의</a></li>
+                                                <li><a href="">목련예술제</a></li>
+                                                <li><a href="">Peace BAR Festival</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">매그놀리아 아너스 클럽</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">대학생활</a>
+                                <div class="sub_box">
+                                    <div class="sub_tit">
+                                        <div class="txt_box">
+                                            <strong>대학생활</strong>
+                                            <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
+                                        </div>
+                                    </div>
+                                    <ul class="sub">
+                                        <li><a href="">학생지원</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">총학생회</a></li>
+                                                <li><a href="">학생지원</a></li>
+                                                <li><a href="">학생지원센터</a></li>
+                                                <li><a href="">미래인재센터</a></li>
+                                                <li><a href="">제증명 서비스</a></li>
+                                                <li><a href="">장애학생지원센터</a></li>
+                                                <li><a href="">의료기관 진료혜택</a></li>
+                                                <li><a href="">국제교류처 외국인지원팀</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="">교육지원사업</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">대학혁신지원사업</a></li>
+                                                <li><a href="">수도권 대학특성화 사업</a></li>
+                                                <li><a href="">교육역량강화 지원사업</a></li>
+                                                <li><a href="">학부교육 선진화 선도대학 지원사업</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">경희미디어</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">영상</a></li>
+                                                <li><a href="">Focus</a></li>
+                                                <li><a href="">카드뉴스</a></li>
+                                                <li><a href="">경희뉴스</a></li>
+                                                <li><a href="">홍보물</a></li>
+                                                <li><a href="">교내언론</a></li>
+                                                <li><a href="">포토갤러리</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">정보서비스</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">인포21</a></li>
+                                                <li><a href="">온라인 백신</a></li>
+                                                <li><a href="">이메일 시스템</a></li>
+                                                <li><a href="">인터넷 증명 발급</a></li>
+                                                <li><a href="">캠퍼스 무선랜(KHU Wi-Fi)</a></li>
+                                                <li><a href="">캠퍼스 라이센스 소프트웨어</a></li>
+                                                <li><a href="">IP Address 및 Domain Name 신청</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">동아리</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">장학</a></li>
+                                                <li><a href="">네오르네상스장학</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">도서관·박물관</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">중앙도서관</a></li>
+                                                <li><a href="">중앙박물관</a></li>
+                                                <li><a href="">혜정박물관</a></li>
+                                                <li><a href="">자연사박물관</a></li>
+                                                <li><a href="">경희 역사 갤러리</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="">커뮤니티</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">공지사항</a></li>
+                                                <li><a href="">경희포럼</a></li>
+                                                <li><a href="">대학안전관리</a></li>
+                                                <li><a href="">커뮤니케이션 21</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="">교원검색</a>
+                                            <ul class="sub_list">
+                                                <li><a href="">이름검색</a></li>
+                                                <li><a href="">소속검색</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="util">
+                        <ul>
+                            <li class="lan"><a href="">언어</a></li>
+                            <li class="search"><a href="">검색</a></li>
+                            <li class="sitemap"><a href="">사이트맵</a></li>
                             <li class="m_menu_btn"><button>모바일 메뉴 버튼</button></li>
                         </ul>
-                        <ul class="bottom">
-                            <li><a href="">웹메일</a></li>
-                            <li><a href="">인포21</a></li>
-                            <li><a href="">채용시스템</a></li>
-                            <li><a href="">발전기금</a></li>
-                            <li class="login"><a href="">로그인</a></li>
-                        </ul>
                     </div>
-
-                    <ul>
-                        <li><a href="">대학소개</a>
-                            <div class="sub_box on">
-                                <div class="sub_tit">
-                                    <div class="txt_box">
-                                        <strong>대학소개</strong>
-                                        <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
-                                    </div>
-                                </div>
-                                <ul class="sub">
-                                    <li><a href="">경희정신</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">상징</a></li>
-                                            <li><a href="">UI</a></li>
-                                            <li><a href="">연혁</a></li>
-                                            <li><a href="">창학정신</a></li>
-                                            <li><a href="">미래전략</a></li>
-                                            <li><a href="">학교법인 경희학원</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">총장실</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">인사말</a></li>
-                                            <li><a href="">약력</a></li>
-                                            <li><a href="">연설</a></li>
-                                            <li><a href="">서신</a></li>
-                                            <li><a href="">동정</a></li>
-                                            <li><a href="">역대총장</a></li>
-                                            <li><a href="">뉴스클리핑</a></li>
-                                            <li><a href="">영상 메시지</a></li>
-                                            <li><a href="">열린 총장실</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">대학행정</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">기구표</a></li>
-                                            <li><a href="">위원회</a></li>
-                                            <li><a href="">부총장실</a></li>
-                                            <li><a href="">교무위원</a></li>
-                                            <li><a href="">대학본부</a></li>
-                                            <li><a href="">부속병원</a></li>
-                                            <li><a href="">부속기관/연구소/기타기관</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">대학현황</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">대학현황</a></li>
-                                            <li><a href="">대학정보공시</a></li>
-                                            <li><a href="">대학정보공개</a></li>
-                                            <li><a href="">예결산공고</a></li>
-                                            <li><a href="">업무추진비</a></li>
-                                            <li><a href="">규정·요람</a></li>
-                                            <li><a href="">기부 및 모금</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">캠퍼스안내</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">서울캠퍼스</a></li>
-                                            <li><a href="">국제캠퍼스</a></li>
-                                            <li><a href="">광릉캠퍼스</a></li>
-                                            <li><a href="">Space 21</a></li>
-                                            <li><a href="">교내 전화번호</a></li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="">입학안내</a>
-                            <div class="sub_box">
-                                <div class="sub_tit">
-                                    <div class="txt_box">
-                                        <strong>입학안내</strong>
-                                        <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
-                                    </div>
-                                </div>
-                                <ul class="sub">
-                                    <li><a href="">대학 입학·편입학</a></li>
-                                    <li><a href="">대학원 입학</a></li>
-                                    <li><a href="">외국인 입학</a></li>
-                                    <li><a href="">교육기관</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">교육기관</a></li>
-                                            <li><a href="">평생교육</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="">대학·대학원</a>
-                            <div class="sub_box">
-                                <div class="sub_tit">
-                                    <div class="txt_box">
-                                        <strong>대학·대학원</strong>
-                                        <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
-                                    </div>
-                                </div>
-                                <ul class="sub sub_wrap">
-                                    <li><a href="">대학</a>
-                                        <ul class="sub_list sub_list_wrap">
-                                            <li><a href="">학사</a></li>
-                                            <li><a href="">후마니타스칼리지</a></li>
-                                            <li><a href="">문과대학</a></li>
-                                            <li><a href="">법과대학</a></li>
-                                            <li><a href="">정경대학</a></li>
-                                            <li><a href="">경영대학</a></li>
-                                            <li><a href="">호텔관광대학</a></li>
-                                            <li><a href="">이과대학</a></li>
-                                            <li><a href="">생활과학대학</a></li>
-                                            <li><a href="">의과대학</a></li>
-                                            <li><a href="">한의과대학</a></li>
-                                            <li><a href="">치과대학</a></li>
-                                            <li><a href="">약학대학</a></li>
-                                            <li><a href="">간호과학대학</a></li>
-                                            <li><a href="">음악대학</a></li>
-                                            <li><a href="">미술대학</a></li>
-                                            <li><a href="">무용학부</a></li>
-                                            <li><a href="">자율전공학부</a></li>
-                                            <li><a href="">공과대학</a></li>
-                                            <li><a href="">전자정보대학</a></li>
-                                            <li><a href="">소프트웨어융합대학</a></li>
-                                            <li><a href="">응용과학대학</a></li>
-                                            <li><a href="">생명과학대학</a></li>
-                                            <li><a href="">국제대학</a></li>
-                                            <li><a href="">외국어대학</a></li>
-                                            <li><a href="">예술·디자인대학</a></li>
-                                            <li><a href="">체육대학</a></li>
-                                            <li><a href="">자유전공학부</a></li>
-                                            <li><a href="">동서의과학과</a></li>
-                                            <li><a href="">융합전공</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">대학원</a>
-
-                                        <ul class="sub_list sub_list_wrap">
-                                            <li><a href="">일반대학원</a></li>
-                                            <li><a href="">경영대학원</a></li>
-                                            <li><a href="">관광대학원</a></li>
-                                            <li><a href="">국제대학원</a></li>
-                                            <li><a href="">간호대학원</a></li>
-                                            <li><a href="">공공대학원</a></li>
-                                            <li><a href="">교육대학원</a></li>
-                                            <li><a href="">법무대학원</a></li>
-                                            <li><a href="">체육대학원</a></li>
-                                            <li><a href="">법학전문대학원</a></li>
-                                            <li><a href="">의학전문대학원</a></li>
-                                            <li><a href="">평화복지대학원</a></li>
-                                            <li><a href="">동서의학대학원</a></li>
-                                            <li><a href="">치의학전문대학원</a></li>
-                                            <li><a href="">테크노경영대학원</a></li>
-                                            <li><a href="">아트퓨전디자인대학원</a></li>
-                                            <li><a href="">미디어커뮤니케이션대학원</a></li>
-                                        </ul>
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="">연구·산학</a>
-                            <div class="sub_box">
-                                <div class="sub_tit">
-                                    <div class="txt_box">
-                                        <strong>연구·산학</strong>
-                                        <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
-                                    </div>
-                                </div>
-                                <ul class="sub">
-                                    <li><a href="">연구기관</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">위원회</a></li>
-                                            <li><a href="">연구지원</a></li>
-                                            <li><a href="">부설연구소</a></li>
-                                            <li><a href="">국가지원연구센터</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">대형연구</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">HK 사업</a></li>
-                                            <li><a href="">WCU 사업</a></li>
-                                            <li><a href="">TLO 사업</a></li>
-                                            <li><a href="">BK21 플러스 사업</a></li>
-                                            <li><a href="">BK21 사업</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">학술진흥 2020</a></li>
-                                    <li><a href="">명예의 전당</a></li>
-                                    <li><a href="">연구포털</a></li>
-                                    <li><a href="">연구자 연구정보(PURE)</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="">교류·실천</a>
-                            <div class="sub_box">
-                                <div class="sub_tit">
-                                    <div class="txt_box">
-                                        <strong>교류·실천</strong>
-                                        <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
-                                    </div>
-                                </div>
-                                <ul class="sub">
-                                    <li><a href="">경희와 인류평화</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">UN평화공원</a></li>
-                                            <li><a href="">World Civic Forum</a></li>
-                                            <li><a href="">UNAI-경희 국제회의</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">사회공헌</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">봉사단체</a></li>
-                                            <li><a href="">글로벌봉사팀</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">국제 교류</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">해외 자매대학</a></li>
-                                            <li><a href="">국제 교류 프로그램</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">특별강연</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">미원렉처</a></li>
-                                            <li><a href="">석학초청특강</a></li>
-                                            <li><a href="">21세기 미래대학을 말한다</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">행사</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">졸업식</a></li>
-                                            <li><a href="">입학식</a></li>
-                                            <li><a href="">목련회의</a></li>
-                                            <li><a href="">목련예술제</a></li>
-                                            <li><a href="">Peace BAR Festival</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">매그놀리아 아너스 클럽</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="">대학생활</a>
-                            <div class="sub_box">
-                                <div class="sub_tit">
-                                    <div class="txt_box">
-                                        <strong>대학생활</strong>
-                                        <p>그대, 살아 숨 쉬는 한 경희의 이름으로 전진하라</p>
-                                    </div>
-                                </div>
-                                <ul class="sub">
-                                    <li><a href="">학생지원</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">총학생회</a></li>
-                                            <li><a href="">학생지원</a></li>
-                                            <li><a href="">학생지원센터</a></li>
-                                            <li><a href="">미래인재센터</a></li>
-                                            <li><a href="">제증명 서비스</a></li>
-                                            <li><a href="">장애학생지원센터</a></li>
-                                            <li><a href="">의료기관 진료혜택</a></li>
-                                            <li><a href="">국제교류처 외국인지원팀</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="">교육지원사업</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">대학혁신지원사업</a></li>
-                                            <li><a href="">수도권 대학특성화 사업</a></li>
-                                            <li><a href="">교육역량강화 지원사업</a></li>
-                                            <li><a href="">학부교육 선진화 선도대학 지원사업</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">경희미디어</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">영상</a></li>
-                                            <li><a href="">Focus</a></li>
-                                            <li><a href="">카드뉴스</a></li>
-                                            <li><a href="">경희뉴스</a></li>
-                                            <li><a href="">홍보물</a></li>
-                                            <li><a href="">교내언론</a></li>
-                                            <li><a href="">포토갤러리</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">정보서비스</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">인포21</a></li>
-                                            <li><a href="">온라인 백신</a></li>
-                                            <li><a href="">이메일 시스템</a></li>
-                                            <li><a href="">인터넷 증명 발급</a></li>
-                                            <li><a href="">캠퍼스 무선랜(KHU Wi-Fi)</a></li>
-                                            <li><a href="">캠퍼스 라이센스 소프트웨어</a></li>
-                                            <li><a href="">IP Address 및 Domain Name 신청</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">동아리</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">장학</a></li>
-                                            <li><a href="">네오르네상스장학</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">도서관·박물관</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">중앙도서관</a></li>
-                                            <li><a href="">중앙박물관</a></li>
-                                            <li><a href="">혜정박물관</a></li>
-                                            <li><a href="">자연사박물관</a></li>
-                                            <li><a href="">경희 역사 갤러리</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="">커뮤니티</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">공지사항</a></li>
-                                            <li><a href="">경희포럼</a></li>
-                                            <li><a href="">대학안전관리</a></li>
-                                            <li><a href="">커뮤니케이션 21</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="">교원검색</a>
-                                        <ul class="sub_list">
-                                            <li><a href="">이름검색</a></li>
-                                            <li><a href="">소속검색</a></li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
-                </nav>
-                <div class="util">
-                    <ul>
-                        <li class="lan"><a href="">언어</a></li>
-                        <li class="search"><a href="">검색</a></li>
-                        <li class="sitemap"><a href="">사이트맵</a></li>
-                        <li class="m_menu_btn"><button>모바일 메뉴 버튼</button></li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- 메인 시작 -->
-    <main>
-        <div id="wrap">
+        </header>
+        <!-- 메인 시작 -->
+        <main>
             <!-- 메인 비주얼 -->
             <section class="main_visual">
                 <div class="main_visual_slide_box swiper">
@@ -402,7 +406,8 @@
                         <div class="swiper-slide itm itm01">
                             <div class="slg">
                                 <strong>
-                                    THE 대학 영향력 평가<br class="br_pc" /><br class="br_m" /> 전 세계 사립대 ‘세계 1위’ 달성!
+                                    THE 대학 영향력 평가<br class="br_pc" /><br class="br_m" />
+                                    전 세계 사립대 ‘세계 1위’ 달성!
                                 </strong>
                                 <p>11개 분야 세계 50위 내 진입, 최초 세계 상위 1% 이내 기록</p>
                             </div>
@@ -410,25 +415,25 @@
                         <div class="swiper-slide itm itm02">
                             <div class="slg">
                                 <strong>
-                                    문화의 깊이, 과학의 높이,<br class="br_m" /> 인간의 넓이<br class="br_pc" />
-                                    경희대학교가 그 모든 가능성의 중심입니다
+                                    개교 76주년<br class="br_pc" /><br class="br_m" />종합대학 승격 70주년
                                 </strong>
+                                <p>‘문화세계의 창조’, ‘학문과 평화’의 여정</p>
                             </div>
                         </div>
                         <div class="swiper-slide itm itm03">
                             <div class="slg">
                                 <strong>
-                                    문화의 깊이, 과학의 높이,<br class="br_m" /> 인간의 넓이<br class="br_pc" />
-                                    경희대학교가 그 모든 가능성의 중심입니다
+                                    경희의 실천 정신 공유<br class="br_pc" /><br class="br_m" />미래의 희망 나누는 화합의 장
                                 </strong>
+                                <p>총동문회 70주년 기념, Spring Harmony 개최</p>
                             </div>
                         </div>
                         <div class="swiper-slide itm itm04">
                             <div class="slg">
                                 <strong>
-                                    문화의 깊이, 과학의 높이,<br class="br_m" /> 인간의 넓이<br class="br_pc" />
-                                    경희대학교가 그 모든 가능성의 중심입니다
+                                    인문사회 학술연구<br class="br_pc" /><br class="br_m" />지원사업 14개 과제 신규 선정
                                 </strong>
+                                <p>디지털 대전환 시대, 인문학적 통찰로 대안 제시</p>
                             </div>
                         </div>
                     </div>
@@ -634,6 +639,8 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="swiper-pagination nav_line_default" alt="슬라이드 페이지 라인"></div>
                 </div>
 
             </section>
@@ -1033,18 +1040,17 @@
                     </div>
                 </div>
             </section>
-
-
             <!-- 메인 포커스 -->
             <section class="main_focus default">
                 <div class="inner">
                     <div class="left">
-                        <div class="tit">
-                            <p>KHU FOCUS</p>
-                            <h2>경희포커스</h2>
+                        <div class="top">
+                            <div class="tit">
+                                <p>KHU FOCUS</p>
+                                <h2>경희포커스</h2>
 
-                            <span>교육연구·실천 부문에서 <br />경희대학교가 거둔 성취를 소개합니다.</span>
-
+                                <span>교육연구·실천 부문에서 <br />경희대학교가 거둔 성취를 소개합니다.</span>
+                            </div>
                         </div>
 
                         <div class="bottom">
@@ -1057,15 +1063,15 @@
                                         <button>NEXT</button>
                                     </div>
                                 </div>
-
-
                             </div>
+
                             <div class="more_p_btn line_btn">
                                 <a href="">VIEW MORE</a>
                             </div>
                         </div>
 
                     </div>
+
 
                     <div class="main_focus_slide_box swiper">
                         <ul class="swiper-wrapper">
@@ -1134,6 +1140,8 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="swiper-pagination nav_line_default" alt="슬라이드 페이지 라인"></div>
                 </div>
             </section>
             <!-- 메인 명예의 전당 -->
@@ -1147,7 +1155,6 @@
                     <a href="">VIEW MORE</a>
                 </div>
             </section>
-
             <!-- 메인 sns -->
             <section class="main_sns default">
                 <div class="inner">
@@ -1169,9 +1176,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="right">
-                        <ul class="main_sns_itm_list">
-                            <li class="itm itm01">
+
+                    <div class="right main_sns_slide_box swiper">
+                        <ul class="main_sns_itm_list swiper-wrapper">
+                            <li class="swiper-slide itm itm01">
                                 <a href="">
                                     <div class="img_box">
                                         <img src="./images/main_sns_itm01.jpg" alt="">
@@ -1182,7 +1190,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="itm itm02">
+                            <li class="swiper-slide itm itm02">
                                 <a href="">
                                     <div class="img_box">
                                         <img src="./images/main_sns_itm02.jpg" alt="">
@@ -1193,7 +1201,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="itm itm03">
+                            <li class="swiper-slide itm itm03">
                                 <a href="">
                                     <div class="img_box">
                                         <img src="./images/main_sns_itm03.jpg" alt="">
@@ -1206,9 +1214,12 @@
                             </li>
                         </ul>
                     </div>
+
+
+                    <div class="swiper-pagination nav_line_default" alt="슬라이드 페이지 라인"></div>
+
                 </div>
             </section>
-
             <!-- 메인 카운트 -->
             <section class="main_count default">
                 <div class="inner">
@@ -1232,6 +1243,10 @@
                                 <span class="count">133</span>
                             </li>
                             <li>
+                                <div class="txt_box">예산(억원)</div>
+                                <span class="count">5,178</span>
+                            </li>
+                            <li>
                                 <div class="txt_box">재학생수</div>
                                 <span class="count">34,342</span>
                             </li>
@@ -1246,95 +1261,95 @@
 
 
             </section>
-        </div>
-    </main>
-    <!-- 메인 끝 -->
-    <!-- 푸터 -->
-    <footer id="footer">
-        <div class="inner">
-            <div class="ft ft_top">
-                <ul>
-                    <li class="b"><a href="">개인정보 처리방침</a></li>
-                    <li><a href="">교내전화번호</a></li>
-                    <li><a href="">대학정보공시</a></li>
-                    <li><a href="">예결산공고</a></li>
-                    <li><a href="">입찰공고</a></li>
-                    <li><a href="">사이트맵</a></li>
-                </ul>
-
-            </div>
-            <div class="ft ft_bottom">
-                <div class="right">
+        </main>
+        <!-- 메인 끝 -->
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="ft ft_top">
                     <ul>
-                        <li><a href="">서울캠퍼스 02447 서울특별시 동대문구 경희대로 26</a></li>
-                        <li><a href="">국제캠퍼스 17104 경기도 용인시 기흥구 덕영대로 1732</a></li>
-                        <li><a href="">광릉캠퍼스 12001 경기도 남양주시 진접읍 광릉수목원로 195</a></li>
+                        <li class="b"><a href="">개인정보 처리방침</a></li>
+                        <li><a href="">교내전화번호</a></li>
+                        <li><a href="">대학정보공시</a></li>
+                        <li><a href="">예결산공고</a></li>
+                        <li><a href="">입찰공고</a></li>
+                        <li><a href="">사이트맵</a></li>
                     </ul>
-                    <div class="copy">
-                        <address>COPYRIGHT &copy; KYUNG HEE UNIVERSITY. ALL RIGHT RESERVED.</address>
-                    </div>
-                </div>
-                <div class="left link">
-                    <div class="link_box link_box01">
-                        <button class="f_link" type="button">교내주요사이트</button>
-                        <ul>
-                            <li><a href="">e-campus</a></li>
-                            <li><a href="">경희옴부즈</a></li>
-                            <li><a href="">경희지구사회봉사단</a></li>
-                            <li><a href="">공학교육혁신센터</a></li>
-                            <li><a href="">교무과</a></li>
-                            <li><a href="">교수학습지원센터</a></li>
-                            <li><a href="">국제교류처</a></li>
-                            <li><a href="">국제교육원(국제)</a></li>
-                            <li><a href="">국제교육원(서울)</a></li>
-                            <li><a href="">국제지역연구원</a></li>
-                            <li><a href="">국제한의학교육원</a></li>
-                            <li><a href="">대외협력처</a></li>
-                            <li><a href="">미래문명원</a></li>
-                            <li><a href="">미래전략</a></li>
-                            <li><a href="">미래혁신원 미래인재센터</a></li>
-                            <li><a href="">부정청탁신고센터</a></li>
-                            <li><a href="">비대면 수업 촬영 예약관리 시스템</a></li>
-                            <li><a href="">수도권대학 특성화사업</a></li>
-                            <li><a href="">생활관</a></li>
-                            <li><a href="">성평등상담실</a></li>
-                            <li><a href="">신문방송국</a></li>
-                            <li><a href="">언어교육원</a></li>
-                            <li><a href="">연구실 안전관리 시스템</a></li>
-                            <li><a href="">연구실험지원센터</a></li>
-                            <li><a href="">우주과학교육관</a></li>
-                            <li><a href="">인류사회재건연구원</a></li>
-                            <li><a href="">자연사박물관</a></li>
-                            <li><a href="">정보처</a></li>
-                            <li><a href="">중앙기기센터</a></li>
-                            <li><a href="">중앙도서관</a></li>
-                        </ul>
-                    </div>
-                    <div class="link_box link_box02">
-                        <button class="f_link" type="button">경희대학교 관련기관</button>
-                        <ul>
-                            <li><a href="">강동경희대학교병원</a></li>
-                            <li><a href="">경희고등학교</a></li>
-                            <li><a href="">경희사이버대학교</a></li>
-                            <li><a href="">경희여자고등학교</a></li>
-                            <li><a href="">경희여자중학교</a></li>
-                            <li><a href="">경희유치원</a></li>
-                            <li><a href="">경희의료원</a></li>
-                            <li><a href="">경희중학교</a></li>
-                            <li><a href="">경희초등학교</a></li>
-                            <li><a href="">경희한약</a></li>
-                            <li><a href="">충동문회</a></li>
-                            <li><a href="">학교법인 경희학원</a></li>
-                        </ul>
-                    </div>
 
                 </div>
+                <div class="ft ft_bottom">
+                    <div class="right">
+                        <ul>
+                            <li><a href="">서울캠퍼스 02447 서울특별시 동대문구 경희대로 26</a></li>
+                            <li><a href="">국제캠퍼스 17104 경기도 용인시 기흥구 덕영대로 1732</a></li>
+                            <li><a href="">광릉캠퍼스 12001 경기도 남양주시 진접읍 광릉수목원로 195</a></li>
+                        </ul>
+                        <div class="copy">
+                            <address>COPYRIGHT &copy; KYUNG HEE UNIVERSITY. ALL RIGHT RESERVED.</address>
+                        </div>
+                    </div>
+                    <div class="left link">
+                        <div class="link_box link_box01">
+                            <button class="f_link" type="button">교내주요사이트</button>
+                            <ul>
+                                <li><a href="">e-campus</a></li>
+                                <li><a href="">경희옴부즈</a></li>
+                                <li><a href="">경희지구사회봉사단</a></li>
+                                <li><a href="">공학교육혁신센터</a></li>
+                                <li><a href="">교무과</a></li>
+                                <li><a href="">교수학습지원센터</a></li>
+                                <li><a href="">국제교류처</a></li>
+                                <li><a href="">국제교육원(국제)</a></li>
+                                <li><a href="">국제교육원(서울)</a></li>
+                                <li><a href="">국제지역연구원</a></li>
+                                <li><a href="">국제한의학교육원</a></li>
+                                <li><a href="">대외협력처</a></li>
+                                <li><a href="">미래문명원</a></li>
+                                <li><a href="">미래전략</a></li>
+                                <li><a href="">미래혁신원 미래인재센터</a></li>
+                                <li><a href="">부정청탁신고센터</a></li>
+                                <li><a href="">비대면 수업 촬영 예약관리 시스템</a></li>
+                                <li><a href="">수도권대학 특성화사업</a></li>
+                                <li><a href="">생활관</a></li>
+                                <li><a href="">성평등상담실</a></li>
+                                <li><a href="">신문방송국</a></li>
+                                <li><a href="">언어교육원</a></li>
+                                <li><a href="">연구실 안전관리 시스템</a></li>
+                                <li><a href="">연구실험지원센터</a></li>
+                                <li><a href="">우주과학교육관</a></li>
+                                <li><a href="">인류사회재건연구원</a></li>
+                                <li><a href="">자연사박물관</a></li>
+                                <li><a href="">정보처</a></li>
+                                <li><a href="">중앙기기센터</a></li>
+                                <li><a href="">중앙도서관</a></li>
+                            </ul>
+                        </div>
+                        <div class="link_box link_box02">
+                            <button class="f_link" type="button">경희대학교 관련기관</button>
+                            <ul>
+                                <li><a href="">강동경희대학교병원</a></li>
+                                <li><a href="">경희고등학교</a></li>
+                                <li><a href="">경희사이버대학교</a></li>
+                                <li><a href="">경희여자고등학교</a></li>
+                                <li><a href="">경희여자중학교</a></li>
+                                <li><a href="">경희유치원</a></li>
+                                <li><a href="">경희의료원</a></li>
+                                <li><a href="">경희중학교</a></li>
+                                <li><a href="">경희초등학교</a></li>
+                                <li><a href="">경희한약</a></li>
+                                <li><a href="">충동문회</a></li>
+                                <li><a href="">학교법인 경희학원</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
-
+        Splitting();
     </script>
 </body>
 
