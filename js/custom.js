@@ -200,7 +200,7 @@ $(function () {
             e.preventDefault();
             $('#header_bottom .sub_box').addClass('on');
             $(this).parent().siblings().find('.sub_box').removeClass('on');
-        };
+        }
 
     });
 
@@ -212,6 +212,12 @@ $(function () {
         }
 
     });
+
+    $(window).on('resize', function () {
+        $('#header .gnb').removeClass('on');
+        $('#header .gnb .sub_list').removeAttr('style');
+    })
+
 
 
 });

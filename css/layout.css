@@ -179,33 +179,16 @@ section .left {
     border: 1px solid #999;
 }
 
-.more_line_w_btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 0;
-    height: 100%;
-    background: var(--white-color);
-
+.more_line_w_btn a {
+    display: block;
+    color: var(--white-color);
+    background: transparent;
     transition: 0.3s;
 }
 
-.more_line_w_btn:hover::before {
-    right: auto;
-    left: 0;
-    width: 100%;
-}
-
-.more_line_w_btn a {
-    color: var(--white-color);
-}
-
 .more_line_w_btn:hover a {
-    z-index: 10;
-    position: relative;
     color: var(--black-color);
+    background: var(--white-color);
     transition: 0.3s;
 }
 
